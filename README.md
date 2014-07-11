@@ -49,16 +49,16 @@ Create a `<div class="container-wrap">` element, with a `<section>` for each sli
 For default script create navigation:
 ```html
 <nav id="sidenav">
-    <a class="linknav active" href="#top-wrapper" title="top-wrapper">
+    <a class="linknav active" href="#first-slide" title="top-wrapper">
         <i class="radio"></i>
     </a>
-    <a class="linknav" href="#more-wrapper" title="more-wrapper">
+    <a class="linknav" href="#second-slide" title="more-wrapper">
         <i class="radio"></i>
     </a>
-    <a class="linknav" href="#number-wrapper" title="number-wrapper">
+    <a class="linknav" href="#third-slide" title="number-wrapper">
         <i class="radio"></i>
     </a>
-    <a class="linknav" href="#bug-wrapper" title="bug-wrapper">
+    <a class="linknav" href="#four-slide" title="bug-wrapper">
         <i class="radio"></i>
     </a>
 </nav>
