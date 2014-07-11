@@ -35,7 +35,7 @@ $(function () {
         key: true,
         nav: 'sidenav',
         navItem: 'linknav',
-        bl: $('body'),
+        bl: $('html'),
         activeClass: 'active',
         insertLinknav: '<i class="radio"></i>',
         keyPos: true,
