@@ -35,20 +35,30 @@ $(function () {
         key: true,
         nav: 'sidenav',
         navItem: 'linknav',
-        bl: $('html'),
+        bl: null,
         activeClass: 'active',
         insertLinknav: '<i class="radio"></i>',
         keyPos: true,
         win: $(window),
         timer: null,
         anDuration: 600
-    },
-    $slide = $(settings.slide),
-    $container = $(settings.container),
-    $navItem = '.' + settings.navItem,
-    slidesCount = $slide.length,
-    blockPos = settings.bl.scrollTop(),
-    navlist = $('<nav id="'+settings.nav+'"></nav>');
+    };
+
+    if (head.browser.chrome || head.browser.webkit || head.browser.safari) {
+        settings.bl = $('body');
+    }
+    else{
+        settings.bl = $('html');
+    };
+
+    console.log(settings.bl);
+
+    var $slide = $(settings.slide),
+        $container = $(settings.container),
+        $navItem = '.' + settings.navItem,
+        slidesCount = $slide.length,
+        blockPos = settings.bl.scrollTop(),
+        navlist = $('<nav id="'+settings.nav+'"></nav>');
 
     $container.prepend(navlist);
 
